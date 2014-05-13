@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+      
+
+<polymer-element name="th-animated" attributes="animateOnInit">
+  
+  <script>
+      Polymer('th-animated', {  
+        animationDelay: 1000,
+        animateOnInit: true,  //should be false actually
+        domReady: function() {
+            this.init();
+            
+            if(this.animateOnInit) {
+                this.animate();
+            }
+
+        },
+        init: function() {
+        },
+        reset: function() {
+        },
+        animate: function() {
+        }
+
+      });
+  </script>
+
+</polymer-element>
