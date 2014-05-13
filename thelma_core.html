@@ -1,17 +1,30 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
       
 
-<polymer-element name="th-animated" attributes="animateOnInit">
+<polymer-element name="th-animated" attributes="animateOnInit animateAfter">
   
   <script>
       Polymer('th-animated', {  
         animationDelay: 1000,
-        animateOnInit: true,  //should be false actually
+        animateAfter: 0,
+        animateOnInit: false,  //should be false actually. true for demo
         domReady: function() {
             this.init();
+
+            console.log('animateAfter');
+            console.log(this.animateAfter);
+            console.log(this);
             
-            if(this.animateOnInit) {
-                this.animate();
+            if(this.animateOnInit || this.animateAfter>0) {
+                if(this.animateAfter>0) {
+                  var that = this;
+                  setTimeout(function() {
+                    that.animate();
+                  },that.animateAfter);
+                }
+                else {
+                  this.animate();
+                }
             }
 
         },
