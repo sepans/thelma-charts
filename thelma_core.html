@@ -2,7 +2,7 @@
 
 <!--      
   multiple inheritance is not supported by polymer so moving this function to th-d3-chart
-<polymer-element assetpath="." name="th-has-datapoint" attributes="">
+<polymer-element name="th-has-datapoint" attributes="">
   <script>
       Polymer('th-has-datapoint', { 
 
@@ -28,7 +28,7 @@
 </polymer-element>
 -->
 
-<polymer-element assetpath="." name="th-animated" attributes="animateOnInit animateAfter completed">
+<polymer-element name="th-animated" attributes="animateOnInit animateAfter completed animate reset" resetable="true" animatable="true">
   
   <script>
       Polymer('th-animated', {  
@@ -47,7 +47,7 @@
                   var that = this;
                   setTimeout(function() {
                     that.animate();
-                  },that.animateAfter();
+                  },that.animateAfter);
                 }
                 else {
                   this.animate();
@@ -61,7 +61,8 @@
         },
         animate: function() {
         },
-        completed: function(){
+        completed: function() {
+
         }
 
       });
