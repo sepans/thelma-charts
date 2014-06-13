@@ -1,5 +1,6 @@
 <script>
   
+  // THEMES
   var belize =  {
     foreground1: '#FFFFFF',
     foreground2: '#DADCE0',
@@ -17,6 +18,7 @@
     font: "'proxima-nova', sans-serif"
   };
 
+  // ASSIGN THEME
   CoreStyle.g.theme = belize;
 
 </script>
@@ -45,7 +47,6 @@
     font-size: 1.12em;
     font-weight: 400;
     line-height: 1.38em;
-    
   }
 
   .subpoint {
@@ -54,7 +55,6 @@
 
   .caps {
     text-transform: uppercase;
-    
   }
 
   .chart {
@@ -71,13 +71,11 @@
 
   /**** CHART STYLES ****/
 
-  .axis, .xLabel, .yLabel, .datapoint {
+  .axis, .xLabel, .yLabel {
     fill: {{g.theme.foreground1}};
     stroke: {{g.theme.foreground1}};
     color:{{g.theme.foreground1}};
   }
-
-
   
   .data0 {
     fill: {{g.theme.accent0}};  
@@ -177,10 +175,5 @@
   }
  
 }
-
-
-
-
-
 
 </core-style>
