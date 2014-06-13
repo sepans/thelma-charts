@@ -1,0 +1,248 @@
+<script>
+  
+  // THEMES
+  var belize =  {
+    foreground1: '#FFFFFF',
+    foreground2: '#DADCE0',
+    background: '#303B49',
+    accent0: '#11B4E9',
+    accent1: '#3EBFEF',  
+    accent2: '#86CBF0',  
+    accent3:' #FCCE63',  
+    accent4: '#D7AA7F',  
+    accent5: '#FCCE64',  
+    accent6: '#FDE054',  
+    accent7: '#FEE055',  
+    accent8: '#B1B9BF',
+    accent9: '#969696',
+    font: "'proxima-nova', sans-serif"
+  },
+
+  berlin =  {
+    foreground1: '#FFFFFF',
+    foreground2: '#969696',
+    background: '#303B49',
+    accent0: '#E64852',
+    accent1: '#5B778D',  
+    accent2: '#66BCE9',  
+    accent3:' #1FB0DF',  
+    accent4: '#F8EB21',  
+    accent5: '#DADCE0',
+    font: "'proxima-nova', sans-serif"
+  },
+
+  baja =  {
+    foreground1: '#FFFFFF',
+    foreground2: '#FFFFFF',
+    background: '#F7931C',
+    accent0: '#FFDFB0',
+    accent1: '#E21B7A',  
+    accent2: '#2C4EC6',  
+    accent3:' #AF1264',  
+    accent4: '#FFFFFF',  
+    accent5: '#185BEF',
+    font: "'proxima-nova', sans-serif"
+  },
+
+  bali =  {
+    foreground1: '#303030',
+    foreground2: '#303030',
+    background: '#FCF0AC',
+    accent0: '#F21700',
+    accent1: '#FCD700',  
+    accent2: '#0ADD78',  
+    accent3:' #0C2851',  
+    accent4: '#303030',  
+    accent5: '#AAA20B',
+    font: "'proxima-nova', sans-serif"
+  },
+
+  barbados =  {
+    foreground1: '#2B2B2B',
+    foreground2: '#969696',
+    background: '#F6F7F7',
+    accent0: '#454A50',
+    accent1: '#3A2850',  
+    accent2: '#065B4D',  
+    accent3:' #0C2851',  
+    accent4: '#118C7A',  
+    accent5: '#2AA898',
+    accent6: '#5AC3B9',  
+    accent7: '#DADCE0',
+    font: "'proxima-nova', sans-serif"
+  },
+
+  dublin =  {
+    foreground1: '#2B2B2B',
+    foreground2: '#969696',
+    background: '#CDD1D6',
+    accent0: '#454A50',
+    accent1: '#52B64F',  
+    accent2: '#3AA5DD',  
+    accent3:' #F2673A',  
+    accent4: '#F6F7F7',  
+    font: "'proxima-nova', sans-serif"
+  };
+
+  // TO ADD: madrid, miami, napa, oslo, salvador, seattle, vancouver
+
+
+  // ASSIGN THEME
+  CoreStyle.g.theme = berlin;
+
+</script>
+
+<core-style id="theme">
+  
+  /**** FONTS ****/
+
+  :host {
+    color: {{g.theme.foreground1}};
+    font-family: {{g.theme.font}};
+  }
+
+  /* TEXT STYLES */
+  .heading {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+
+  .subheading {
+    font-size: 1.15em;
+    line-height: 1.4em;
+  }
+
+  .mainpoint {
+    font-size: 1.12em;
+    font-weight: 400;
+    line-height: 1.38em;
+  }
+
+  .subpoint {
+    
+  }
+
+  .caps {
+    text-transform: uppercase;
+  }
+
+  .chart {
+    font-size: 0.75em;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    
+  }
+
+  .label {
+    
+  }
+
+  /**** CHART STYLES ****/
+
+  .axis, .xLabel, .yLabel {
+    fill: {{g.theme.foreground1}};
+    stroke: {{g.theme.foreground1}};
+    color:{{g.theme.foreground1}};
+  }
+  
+  .data0 {
+    fill: {{g.theme.accent0}};  
+    stroke: {{g.theme.accent0}};  
+  }
+
+  .data1 {
+    fill: {{g.theme.accent1}};
+    stroke: {{g.theme.accent1}};
+  }
+
+  .data2 {
+    fill: {{g.theme.accent2}};
+    stroke: {{g.theme.accent2}};
+  }
+
+  .data3 {
+    fill: {{g.theme.accent3}};
+    stroke: {{g.theme.accent3}};
+  }
+
+  .data4 {
+    fill: {{g.theme.accent4}};
+    stroke: {{g.theme.accent4}};
+  }
+
+  .data5 {
+    fill: {{g.theme.accent5}};
+    stroke: {{g.theme.accent5}};
+  }
+
+  .data6 {
+    fill: {{g.theme.accent6}};
+    stroke: {{g.theme.accent6}};
+  }
+
+  .data7 {
+    fill: {{g.theme.accent7}};
+    stroke: {{g.theme.accent7}};
+  }
+
+  .data8 {
+    fill: {{g.theme.accent8}};
+    stroke: {{g.theme.accent8}};
+  }
+
+  .data9 {
+    fill: {{g.theme.accent9}};
+    stroke: {{g.theme.accent9}};
+  }
+
+  .pulse {
+    fill: {{g.theme.background}};
+  }
+
+  .fill-background {
+    fill: {{g.theme.background}};
+  }
+
+  .fill-foreground {
+    fill: {{g.theme.foreground1}};
+  }
+
+  .stroke-background {
+    stroke: {{g.theme.background}};
+  }
+  
+  .stroke-foreground {
+    stroke: {{g.theme.foreground1}};
+  }
+
+  .no-fill {
+    fill: none;
+  }
+
+  .no-stroke {
+    stroke: none;
+  }
+
+
+  /**** QUOTEBOX STYLES ****/
+
+  .border { 
+     border: 4px solid {{g.theme.accent0}};
+  }
+
+  .quote-box {
+    background-color: {{g.theme.background}};
+  }
+
+  .quote-box:after, {
+    border-top-color: {{g.theme.background}};
+  }
+    
+  .quote-box:before {
+    border-top-color: {{g.theme.foreground2}};
+  }
+ 
+}
+
+</core-style>
