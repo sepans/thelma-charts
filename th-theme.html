@@ -228,11 +228,12 @@
   /**** QUOTEBOX STYLES ****/
 
   .border { 
-     border: 4px solid {{g.theme.accent0}};
+     border: 4px solid {{g.theme.foreground2}};
   }
 
   .quote-box {
     background-color: {{g.theme.background}};
+    border: 2px solid {{g.theme.foreground2}}
   }
 
   .quote-box:after, {
@@ -241,6 +242,10 @@
     
   .quote-box:before {
     border-top-color: {{g.theme.foreground2}};
+  }
+
+  .img { 
+    border: 4px solid {{g.theme.accent2}};
   }
  
 }
