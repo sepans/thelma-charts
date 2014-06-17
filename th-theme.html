@@ -179,6 +179,10 @@
   // ASSIGN THEME
   CoreStyle.g.theme = Themes.belize;
 
+  CoreStyle.g.theme.allAccents = [CoreStyle.g.theme.accent0, CoreStyle.g.theme.accent1,CoreStyle.g.theme.accent2,
+                                  CoreStyle.g.theme.accent3, CoreStyle.g.theme.accent4, CoreStyle.g.theme.accent5,
+                                  CoreStyle.g.theme.accent6];  
+
 </script>
 
 <core-style id="theme">
@@ -236,6 +240,11 @@
   a {
     color: {{g.theme.accent0}}
   }
+
+  .background-color {
+    background-color: {{g.theme.background}};
+  }
+
 
   /**** CHART STYLES ****/
 
@@ -348,6 +357,9 @@
   }
 
   /**** MAP STYLES ****/
+  .mark {
+    fill: {{g.theme.foreground1}};
+  }
   .map-border {
 
     stroke: {{g.theme.foreground1}};
@@ -356,6 +368,7 @@
   }
   .active {
     fill: {{g.theme.foreground2}};
+    stroke-width: 2px;
   }
 }
  
