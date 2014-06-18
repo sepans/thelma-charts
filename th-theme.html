@@ -17,7 +17,7 @@
     accent7: '#FEE055',  
     accent8: '#B1B9BF',
     accent9: '#969696',
-    font: "'franklin-gothic-urw-cond', sans-serif"
+    font: "'proxima-nova', sans-serif"
   };
 
   Themes.berlin =  {
@@ -179,6 +179,10 @@
   // ASSIGN THEME
   CoreStyle.g.theme = Themes.belize;
 
+  CoreStyle.g.theme.allAccents = [CoreStyle.g.theme.accent0, CoreStyle.g.theme.accent1,CoreStyle.g.theme.accent2,
+                                  CoreStyle.g.theme.accent3, CoreStyle.g.theme.accent4, CoreStyle.g.theme.accent5,
+                                  CoreStyle.g.theme.accent6];  
+
 </script>
 
 <core-style id="theme">
@@ -188,48 +192,59 @@
   :host { 
     color: {{g.theme.foreground1}};
     font-family: {{g.theme.font}};
+    display: block;
+    position: relative;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
   }
 
-  /* TEXT STYLES */
-  .heading {
-    font-size: 1.4em;
-    line-height: 1.4em;
-  }
-
-  .subheading {
-    font-size: 1.15em;
-    line-height: 1.4em;
+ .headline {
+    font-size: 1.7em;
+    font-weight: 500;
   }
 
   .mainpoint {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  .submainpoint { 
     font-size: 1.12em;
     font-weight: 400;
-    line-height: 1.38em;
   }
 
   .subpoint {
-    
+    font-size: 1.05em;
+    font-weight: 300;
+  }
+
+  .chart {
+    font-size: 0.95em;
+    font-weight: 400;
+  }
+
+  .label {
+    font-size: 0.9em;
+    font-weight: 300;
   }
 
   .caps {
     text-transform: uppercase;
   }
 
-  .chart {
-    font-size: 0.75em;
-    line-height: 1.3;
-    text-transform: uppercase;
+  .center {
     text-align: center;
-    
-  }
-
-  .label {
-    
   }
 
   a {
     color: {{g.theme.accent0}}
   }
+
+  .background-color {
+    background-color: {{g.theme.background}};
+  }
+
 
   /**** CHART STYLES ****/
 
@@ -340,6 +355,22 @@
   .img { 
     border: 4px solid {{g.theme.accent0}};
   }
+
+  /**** MAP STYLES ****/
+  .mark {
+    fill: {{g.theme.foreground1}};
+  }
+  .map-border {
+
+    stroke: {{g.theme.foreground1}};
+    fill: {{g.theme.background}};
+
+  }
+  .active {
+    fill: {{g.theme.foreground2}};
+    stroke-width: 2px;
+  }
+}
  
 }
 
