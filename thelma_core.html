@@ -35,13 +35,10 @@
         animationDelay: 1000,
         animateAfter: 0,
         animateOnInit: false,  //should be false actually. true for demo
+        initialized: false,
         domReady: function() {
             this.init();
 
-            console.log('animateAfter');
-            console.log(this.animateAfter);
-            console.log(this);
-            
             if(this.animateOnInit || this.animateAfter>0) {
                 if(this.animateAfter>0) {
                   var that = this;
@@ -53,6 +50,9 @@
                   this.animate();
                 }
             }
+
+            initialized = true;
+
 
         },
         init: function() {
