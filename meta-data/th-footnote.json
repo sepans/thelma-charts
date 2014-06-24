@@ -1,0 +1,100 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="thelma_core.html">
+
+
+<polymer-element name="th-footnote" extends="th-animated" attributes="toggle show hide">
+  <template>
+    <style>
+      :host {
+        font-size: 0.875em;
+      }
+      #container {
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        padding: 15px 15px 15px 35px;
+        background: url('/images/link-icon.png') 10px 20px no-repeat;
+        background-color: rgba(0,0,0,.8);
+        color: white;
+        max-height: 200px;
+        display: block;
+        overflow-y: scroll;
+        width: 100%;
+        z-index: 500;
+        cursor: pointer;
+        box-sizing: border-box;
+        -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+           -moz-transition: all 0.3s ease;
+             -o-transition: all 0.3s ease;
+      }
+
+      #container::-webkit-scrollbar, #container::-webkit-scrollbar-track, #container::-webkit-scrollbar-thumb {
+         background-color: rgba(0,0,0,.8);
+      }
+
+      @-webkit-keyframes pulse { /* should be same as foreground color */
+        from {
+         background-color: rgba(255,255,255,0.5); 
+        }
+        50% {
+          background-color: rgba(255,255,255,0.2);
+        }
+        to {
+          background-color: rgba(255,255,255,0.5);      
+        }
+      }
+
+      #info {
+        border-radius: 50%;
+        color: white;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        padding: 2px;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        -webkit-animation-name: pulse;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      .th-transition-show {
+        -webkit-transform: translateY(-100%);
+           -moz-transform: translateY(-100%);
+                transform: translateY(-100%);
+      }
+
+   
+
+    </style>
+    <span id="info" on-click="{{toggle}}">i</span>
+    <div id="container" on-click="{{toggle}}"><content></content></div>
+  </template> 
+  <script>
+    Polymer('th-footnote', {
+      visible: false,
+      domReady: function(){
+        this.$container = this.$.container;
+        var height = this.$container.offsetHeight; // remove the padding (why 10? it was 30 before!!)
+        this.$container.style.bottom = -height +'px';
+      },
+      toggle: function(){
+        this.$container.classList.toggle('th-transition-show');
+        this.visible != this.visible;
+      },
+      show: function() {
+        this.$container.classList.add('th-transition-show');
+        this.visible = true;
+      },
+      hide: function() {
+        this.$container.classList.remove('th-transition-show');
+        this.visible = false;
+      }
+    });
+  </script>
+</polymer-element> 

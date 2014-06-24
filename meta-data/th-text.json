@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="thelma_core.html">
+
+
+<polymer-element name="th-text" extends="th-animated" attributes="type markdown">
+  <template>
+    <core-style ref="theme"></core-style>
+    <div id="container" class="{{type}}"><content></content></div>
+  </template>
+  <script>
+
+      Polymer('th-text', {
+        type: "mainpoint",  // options: headline, mainpoint, submainpoint, subpoint, chart, label, caps
+        markdown: true, // set false if other components are embedded (i.e. countup)
+        ready: function() {
+          this.$.container.className = this.type;
+          if (this.markdown) {
+            this.text = this.trim(this.textContent);
+          }
+        },
+        textChanged: function() {
+          this.$.container.innerHTML = this.markdown ? marked(this.text) : this.textContent;
+        },
+        trim: function(str) { 
+          return str.replace(/^[^\S\n]+/gm,'');
+        }
+      });
+
+  </script>
+</polymer-element>
