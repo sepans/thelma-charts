@@ -1,0 +1,32 @@
+{
+  "name": "th-line-graph-single",
+  "description": "Thelma line graph",
+  "category":"chart",
+  "version": "0.0.1",
+  "thumbnail":"chart.jpg", 
+  "tags":["chart", "line", "animated"],
+  "inputAttr": {
+    "chartWidth":{"friendly":"Width", "type":"int", "default":200},
+    "chartHeight":{"friendly":"Height", "type":"int", "default":300},
+    "lineStyle":{"friendly":"Line Style", "type":"dropdown","default":"cardinal", "values":["linear", "basis", "cardinal", "monotone", "step-before", "step-after"]},
+    "animateStyle":{"friendly":"Animate Style","type":"dropdown","default":"draw", "values":["draw","raise"]},
+    "animateAxis":{"friendly":"Animate Axis", "type":"boolean", "default": false},
+    "fillArea":{"friendly":"Fill Area", "type":"boolean", "default": true},
+    "dataPosition":{"friendly":"Data Position","type":"dropdown","default":"left", "values":["left","right"]},
+    "chartData":{"friendly":"Data", "type":"table-repeating","rows":5, 
+      "fields":{
+        "label":{"friendly":"Label", "type":"string", "default":"2010"},
+        "value":{"friendly":"Value", "type":"int", "default":100},
+        "display_value":{"friendly":"Display Value", "type":"string", "default":"100$"},
+        "tooltip":{"friendly":"Tool Tip", "type":"string", "default":"", "optional": true}
+      },
+      "default":[
+        {"label": 2010, "value": 104,"display_value": "$104","tooltip": "Enter a tooltip" },
+        {"label": 2011, "value": 108,"display_value": "$108","tooltip": "Enter a tooltip" },
+        {"label": 2012, "value": 107,"display_value": "$107", "tooltip": "Enter a tooltip"},
+        {"label": 2013, "value": 110,"display_value": "$110", "tooltip": "Enter a tooltip",},
+        {"label": 2014, "value": 112,"display_value": "$112", "tooltip": "Enter a tooltip"}
+      ]
+    }
+  }
+}
