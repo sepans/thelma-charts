@@ -1,6 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/core-style/core-style.html">
-<script src="../bower_components/marked/lib/marked.js"></script>
 
 <!-- core components -->
 <link rel="import" href="thelma_core.html">
@@ -15,6 +14,7 @@
 <link rel="import" href="th-multistep.html">
 <link rel="import" href="th-text.html">
 <link rel="import" href="th-table-bullets.html">
+
 
 <!-- chart components -->
 <link rel="import" href="th-d3-chart.html">
@@ -31,6 +31,14 @@
 <link rel="import" href="th-n-peak-chart.html">
 
 <link rel="import" href="th-map-us.html">
+
+<!-- slider needs to be included here otherwise the included d3.js in other elements override the d3 object and remove the slider method 
+WEIRD!! shouldn't polymer provide encapsulation?
+-->
+<link rel="import" href="th-slider.html">
+
+
+
 
 
 
