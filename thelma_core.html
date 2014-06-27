@@ -41,10 +41,10 @@
 
             if(this.animateOnInit || this.animateAfter>0) {
                 if(this.animateAfter>0) {
-                  var that = this;
+                  var self = this;
                   setTimeout(function() {
-                    that.animate();
-                  },that.animateAfter);
+                    self.animate();
+                  },self.animateAfter);
                 }
                 else {
                   this.animate();
