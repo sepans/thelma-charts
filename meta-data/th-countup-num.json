@@ -1,0 +1,15 @@
+{
+  "name": "th-quote-box",
+  "description": "Thelma Quote",
+  "category":"textual",
+  "version": "0.0.1",
+  "thumbnail":"quote.jpg", 
+  "tags":["textual", "image"],
+  "inputAttr": {
+    "qWidth":{"friendly":"Width", "type":"int", "default":250},
+    "content":{"friendly":"Quote", "type":"content", "default":""},
+    "qTitle":{"friendly":"Title", "type":"string", "default":""},
+    "qDetails":{"friendly":"Details", "type":"string", "default":""},
+    "qImage":{"friendly":"Image", "type":"image", "default":""}
+  }
+}
