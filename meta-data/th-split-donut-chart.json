@@ -1,0 +1,18 @@
+{
+  "name": "th-split-donut-chart",
+  "description": "Thelma split donut chart",
+  "category":"graph",
+  "version": "0.0.1",
+  "thumbnail":"split-donut.jpg",
+  "tags":["graph", "pie", "data", "animated"],
+  "inputAttr": {
+    "chartWidth":{"friendly":"Width", "type":"int", "default":260},
+    "chartHeight":{"friendly":"Height", "type":"int", "default":300},
+    "chartData":{"friendly":"Data", "type":"table-fixed","rows":2, 
+      "fields":{
+        "value":{"friendly":"Value", "type":"int", "default":25},
+      },
+      "default":[{"value": 26}, {"value": 43}]
+    }
+  }
+}
