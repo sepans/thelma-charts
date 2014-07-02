@@ -18,6 +18,6 @@
         {"label": "Smoker", "count": 3, "image": "/thelma-componenets/images/kid-smoker.png"},
         {"label": "Non-Smoker", "count": 50, "image": "/thelma-components/images/kid.png"}
       ]
-  }
+    }
   }
 }
