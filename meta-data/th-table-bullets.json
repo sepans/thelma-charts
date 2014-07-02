@@ -1,0 +1,20 @@
+{
+  "name": "th-table-bullets",
+  "description": "Thelma Bullets",
+  "category":"textual",
+  "version": "0.0.1",
+  "thumbnail":"bullets.jpg",
+  "inputAttr": {
+    "tableData":{"friendly":"Data", "type":"table-repeating","rows":2, 
+      "fields":{
+        "bullet":{"friendly":"Bullet", "type":"unicode", "default":"\u25CF"},
+        "text":{"friendly":"Text", "type":"string", "default":"This is a bullet"}
+      },
+      "default":[ 
+          { "bullet": "\u25CF", "text": "This is the first bullet."},
+          { "bullet": "\u25CF", "text": "This is the second bullet."},
+          { "bullet": "\u25CF", "text": "This is the third bullet."}
+      ]
+    }
+  }
+}

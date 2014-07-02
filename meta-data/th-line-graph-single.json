@@ -24,7 +24,7 @@
         {"label": 2010, "value": 104,"display_value": "$104","tooltip": "Enter a tooltip" },
         {"label": 2011, "value": 108,"display_value": "$108","tooltip": "Enter a tooltip" },
         {"label": 2012, "value": 107,"display_value": "$107", "tooltip": "Enter a tooltip"},
-        {"label": 2013, "value": 110,"display_value": "$110", "tooltip": "Enter a tooltip",},
+        {"label": 2013, "value": 110,"display_value": "$110", "tooltip": "Enter a tooltip"},
         {"label": 2014, "value": 112,"display_value": "$112", "tooltip": "Enter a tooltip"}
       ]
     }
