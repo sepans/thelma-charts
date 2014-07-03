@@ -15,9 +15,9 @@
         "image":{"friendly":"Image", "type":"image", "default":"/elements/images/kid.png"}
       },
       "default":[
-        {"label": "Smoker", "count": 3, "image": "/elements/images/kid-smoker.png"},
-        {"label": "Non-Smoker", "count": 50, "image": "/elements/images/kid.png"}
+        {"label": "Smoker", "count": 3, "image": "/thelma-componenets/images/kid-smoker.png"},
+        {"label": "Non-Smoker", "count": 50, "image": "/thelma-components/images/kid.png"}
       ]
-  }
+    }
   }
 }
