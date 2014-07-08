@@ -16,6 +16,7 @@
   </style>
 
 
+
 </head>
 <body unresolved>
 
@@ -31,17 +32,41 @@
 
   <th-stacked-chart animateOnInit="true"></th-stacked-chart>
 
-  <th-n-peak-chart animateOnInit="true"></th-n-peak-chart>
+  <th-n-peak-chart chartWidth="400" animateOnInit="true"></th-n-peak-chart>
 
   <th-n-bar-chart-horizontal animateOnInit="true"></th-n-bar-chart-horizontal>
 
-  <th-map-us animateAfter="3000" chartWidth="400px"></th-map-us>
+  <th-map-us animateAfter="3000" ></th-map-us>
 
   <th-split-donut-chart animateOnInit="true"></th-split-donut-chart>
 
   <th-compare-grid-chart animateOnInit="true"></th-compare-grid-chart>
 
+  <th-compare-balance-chart animateOnInit="true"></th-compare-balance-chart>
+
   <!--<th-slider></th-slider> -->
+
+  <script>
+  /*
+        document.querySelector('th-n-peak-chart').addEventListener('th-ready', function() {
+            console.log(this);
+            var chart = this;
+            var width = this.chartWidth;
+            console.log(width);
+            var i = 0;
+            setInterval(function() {
+                if(i==0) {
+                    chart.chartData = {label: 'Platinum', value: 50, display_value: '$50'},{label: 'Gold', value: 45, display_value: '$45'};
+                }
+                else {
+                chart.chartWidth = chart.chartWidth - 50; 
+              }
+                i++;
+            },1000);
+        });
+  */
+
+  </script>
 
 
 </body>
