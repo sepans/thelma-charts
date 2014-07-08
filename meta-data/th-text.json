@@ -13,6 +13,6 @@
       "values": ["headline","mainpoint", "submainpoint", "subpoint", "chart", "label", "caps"],
       "default": "mainpoint"
     },
-    "markdown":{"friendly":"Markdown", "type":"boolean", "default":false}
+    "markdown":{"friendly":"Markdown", "type":"boolean", "default":true}
   }
 }
