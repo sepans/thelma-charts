@@ -8,7 +8,8 @@
     "tableData":{"friendly":"Data", "type":"table-repeating","rows":2, 
       "fields":{
         "bullet":{"friendly":"Bullet", "type":"unicode", "default":"\u25CF"},
-        "text":{"friendly":"Text", "type":"string", "default":"This is a bullet"}
+        "text":{"friendly":"Text", "type":"string", "default":"This is a bullet"},
+        "image": {"friendly":"Image", "type":"image", "default":""}
       },
       "default":[ 
           { "bullet": "\u25CF", "text": "This is the first bullet."},

@@ -7,7 +7,12 @@
   "tags":["textual", "Markdown"],
   "inputAttr": {
     "content":{"friendly":"HTML/Text", "type":"content", "default":"Enter Text..."},
-    "type":{"friendly":"Type","type":"dropdown", "values": ["headline","mainpoint", "submainpoint", "subpoint", "chart", "label", "caps"]},
-    "markdown":{"friendly":"Markdown", "type":"boolean", "default":false}
+    "type":{
+      "friendly":"Type",
+      "type":"dropdown", 
+      "values": ["headline","mainpoint", "submainpoint", "subpoint", "chart", "label", "caps"],
+      "default": "mainpoint"
+    },
+    "markdown":{"friendly":"Markdown", "type":"boolean", "default":true}
   }
 }
