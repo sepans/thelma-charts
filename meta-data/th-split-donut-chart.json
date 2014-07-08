@@ -10,9 +10,11 @@
     "chartHeight":{"friendly":"Height", "type":"int", "default":300},
     "chartData":{"friendly":"Data", "type":"table-fixed","rows":2, 
       "fields":{
+        "label":{"friendly":"Label", "type":"string", "default": "U.S."},
         "value":{"friendly":"Value", "type":"int", "default":25}
+
       },
-      "default":[{"value": 26}, {"value": 43}]
+      "default":[{label: "U.S.", value: 76}, {label: "China", value: 43}]
     }
   }
 }
