@@ -14,7 +14,7 @@
         "value":{"friendly":"Value", "type":"int", "default":25}
 
       },
-      "default":[{label: "U.S.", value: 76}, {label: "China", value: 43}]
+      "default":[{"label": "U.S.", "value": 76}, {"label": "China", "value": 43}]
     }
   }
 }
