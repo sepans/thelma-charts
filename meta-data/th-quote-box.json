@@ -6,7 +6,7 @@
   "thumbnail":"quote.jpg", 
   "tags":["textual", "image"],
   "inputAttr": {
-    "width":{"friendly":"Width(add px)", "type":"string", "default":"270px"},
+    "width":{"friendly":"Width(add px)", "type":"string", "default":"285px"},
     "content":{"friendly":"Quote", "type":"content", "default":""},
     "title":{"friendly":"Title", "type":"string", "default":""},
     "details":{"friendly":"Details", "type":"string", "default":""},
