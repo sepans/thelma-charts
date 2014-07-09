@@ -6,10 +6,10 @@
   "thumbnail":"quote.jpg", 
   "tags":["textual", "image"],
   "inputAttr": {
-    "qWidth":{"friendly":"Width(add px)", "type":"string", "default":"270px"},
+    "width":{"friendly":"Width(add px)", "type":"string", "default":"285px"},
     "content":{"friendly":"Quote", "type":"content", "default":""},
-    "qTitle":{"friendly":"Title", "type":"string", "default":""},
-    "qDetails":{"friendly":"Details", "type":"string", "default":""},
-    "qImage":{"friendly":"Image", "type":"image", "default":""}
+    "title":{"friendly":"Title", "type":"string", "default":""},
+    "details":{"friendly":"Details", "type":"string", "default":""},
+    "image":{"friendly":"Image", "type":"image", "default":""}
   }
 }
