@@ -15,6 +15,6 @@
       "default": "mainpoint",
     },
     "markdown":{"friendly":"Markdown", "type":"boolean", "default":true},
-    "color":{"friendly":"Color", "type":"string", "default":""}
+    "color":{"friendly":"Color", "type":"string", "default":"", "optional":true}
   }
 }
