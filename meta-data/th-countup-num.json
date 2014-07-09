@@ -8,6 +8,7 @@
     "width":{"friendly":"Width(add px)", "type":"string", "default":"285px"},
     "content":{"friendly":"Number", "type":"content", "default":"Count to 40"},
     "numberSize":{"friendly":"Number Size", "type":"string", "default":"40px"}, 
+    "color":{"friendly":"Number Color", "type":"string", "default":""}, 
     "type":{"friendly":"Type","type":"dropdown", "values": ["headline","mainpoint", "submainpoint", "subpoint", "chart", "label", "caps"], "default": "mainpoint"},
     "startFrom":{"friendly":"Start From", "type":"int", "default":0},
     "startFromSameNumberOfDigit":{"friendly":"Same number dig?", "type":"boolean", "default":true},

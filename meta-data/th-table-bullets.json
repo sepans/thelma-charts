@@ -10,12 +10,13 @@
       "fields":{
         "bullet":{"friendly":"Bullet", "type":"unicode", "default":"\u25CF"},
         "text":{"friendly":"Text", "type":"string", "default":"This is a bullet"},
-        "image": {"friendly":"Image", "type":"image", "default":""}
+        "image": {"friendly":"Image", "type":"image", "default":""},
+        "color": {"friendly":"Color", "type":"string", "default":""}
       },
       "default":[ 
-          { "bullet": "\u25CF", "text": "This is the first bullet."},
-          { "bullet": "\u25CF", "text": "This is the second bullet."},
-          { "bullet": "\u25CF", "text": "This is the third bullet."}
+          { "bullet": "\u25CF", "text": "First bullet.", "image": "", "color":""},
+          { "bullet": "\u25CF", "text": "Second bullet.", "image": "", "color":""},
+          { "bullet": "\u25CF", "text": "Third bullet.", "image": "", "color":""}
       ]
     }
   }

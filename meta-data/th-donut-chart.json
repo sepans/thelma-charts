@@ -10,9 +10,10 @@
     "chartHeight":{"friendly":"Height", "type":"int", "default":300},
     "chartData":{"friendly":"Data", "type":"flat-object",
       "fields":{
-        "value":{"friendly":"Value", "type":"int", "default":65}
+        "value":{"friendly":"Value", "type":"int", "default":65},
+        "color":{"friendly":"Color", "type":"string", "default":""}
       },
-      "default":{"value": 65}
+      "default":{"value": 65, "color":""}
     }
   }
 }
