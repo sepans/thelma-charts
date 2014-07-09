@@ -12,12 +12,13 @@
       "fields":{
         "label":{"friendly":"Label", "type":"string", "default":"Player"},
         "value":{"friendly":"Value", "type":"int", "default":15},
-        "display_value":{"friendly":"Display Value", "type":"string", "default":"$15"}
+        "display_value":{"friendly":"Display Value", "type":"string", "default":"$15"},
+        "color":{"friendly":"Color", "type":"string", "default":"", "optional":true}
       },
       "default":[
-      {"label": "medicaid", "value": 20, "display_value": "$20"},
-      {"label": "gap", "value": 40, "display_value": "$40"},
-      {"label": "sub", "value": 10, "display_value": "$10"}]
+      {"label": "medicaid", "value": 20, "display_value": "$20", "color":""},
+      {"label": "gap", "value": 40, "display_value": "$40", "color":""},
+      {"label": "sub", "value": 10, "display_value": "$10", "color":""}]
     }
   }
 }
