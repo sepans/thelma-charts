@@ -11,7 +11,7 @@
     "chartData":{"friendly":"Data", "type":"flat-object",
       "fields":{
         "value":{"friendly":"Value", "type":"int", "default":65},
-        "color":{"friendly":"Color", "type":"string", "default":"", "optional":true}
+        "color":{"friendly":"Color", "type":"colorPicker", "default":"", "optional":true}
       },
       "default":{"value": 65, "color":""}
     }

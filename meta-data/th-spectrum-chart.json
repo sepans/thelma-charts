@@ -16,7 +16,7 @@
         "range_min_display_value":{"friendly":"Min Disp", "type":"string", "default":"$10"},
         "range_max_value":{"friendly":"Value", "Max Val":"int", "default":50},
         "range_max_display_value":{"friendly":"Max Disp", "type":"string", "default":"$50"},
-        "color":{"friendly":"Color", "type":"string", "default":"", "optional":true},
+        "color":{"friendly":"Color", "type":"colorPicker", "default":"", "optional":true},
         "pattern":{"friendly":"Pattern", "type":"string", "default":"stripe", "optional":true}
       },
       "default":[
