@@ -230,6 +230,7 @@
   .subpoint {
     font-size: 1.0em;
     font-weight: 300;
+    line-height: 1.5;
   }
 
   .chart {
@@ -382,31 +383,36 @@
 
   .img { 
     border: 4px solid {{g.theme.accent0}};
-    -webkit-box-shadow: 0px 0px 0px 10px {{g.theme.background}};
+   
+  }
+
+  .img-shadow {
+   -webkit-box-shadow: 0px 0px 0px 10px {{g.theme.background}};
     -moz-box-shadow:    0px 0px 0px 10px {{g.theme.background}};
     box-shadow:         0px 0px 0px 10px {{g.theme.background}};
   }
 
+  /**** TWEET STYLES ****/
+
   .tweetbox {
-    border: 2px solid {{g.theme.foreground2}}; 
+    border: 3px solid {{g.theme.foreground2}}; 
     border-bottom: none;
   }
 
   .icon {
-    width: 25px;
-   
-
-}
-
-.icon-background {
-   position: absolute;
-    margin-top: -12px;
-    margin-left: 80%; 
+    width: 22px;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 75%; 
     background-color: {{g.theme.background}};
-  -webkit-box-shadow: 0px 0px 0px 5px {{g.theme.background}};
+    -webkit-box-shadow: 0px 0px 0px 5px {{g.theme.background}};
     -moz-box-shadow:    0px 0px 0px 5px {{g.theme.background}};
     box-shadow:         0px 0px 0px 5px {{g.theme.background}};
-}
+  }
+
+  .icon-wrapper {
+     border-top: 3px solid {{g.theme.foreground2}};
+  }
 
   /**** MAP STYLES ****/
   .mark {
