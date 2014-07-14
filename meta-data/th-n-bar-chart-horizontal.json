@@ -12,13 +12,14 @@
       "fields":{
         "label":{"friendly":"Label", "type":"string", "default":"Player"},
         "value":{"friendly":"Value", "type":"int", "default":15},
-        "display_value":{"friendly":"Display Value", "type":"string", "default":"$15"}
+        "display_value":{"friendly":"Display Value", "type":"string", "default":"$15"},
+        "color":{"friendly":"Color", "type":"colorPicker", "default":"", "optional":true}
       },
       "default":[
-        {"label": "Player", "value": 15, "display_value": "$15"},
-        {"label": "Vendor", "value": 20, "display_value": "$20"},
-        {"label": "Cheerleader", "value": 40, "display_value": "$40"},
-        {"label": "Designer", "value": 70, "display_value": "$70"}
+        {"label": "Player", "value": 15, "display_value": "$15", "color":""},
+        {"label": "Vendor", "value": 20, "display_value": "$20", "color":""},
+        {"label": "Cheerleader", "value": 40, "display_value": "$40", "color":""},
+        {"label": "Designer", "value": 70, "display_value": "$70", "color":""}
       ]
     }
   }

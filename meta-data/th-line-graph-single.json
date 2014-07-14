@@ -20,14 +20,15 @@
         "label":{"friendly":"Label", "type":"string", "default":"2010"},
         "value":{"friendly":"Value", "type":"int", "default":100},
         "display_value":{"friendly":"Display Value", "type":"string", "default":"$100"},
-        "note":{"friendly":"Note", "type":"string", "default":"", "optional": true}
+        "note":{"friendly":"Note", "type":"string", "default":"", "optional": true},
+        "color":{"friendly":"Color", "type":"colorPicker", "default":"", "optional": true}
       },
       "default":[
-        {"label": 2010, "value": 104,"display_value": "$104","note": ""},
-        {"label": 2011, "value": 108,"display_value": "$108","note": ""},
-        {"label": 2012, "value": 107,"display_value": "$107", "note": ""},
-        {"label": 2013, "value": 110,"display_value": "$110", "note": ""},
-        {"label": 2014, "value": 112,"display_value": "$112", "note": ""}
+        {"label": 2010, "value": 104,"display_value": "$104", "note": "", "color": ""},
+        {"label": 2011, "value": 108,"display_value": "$108", "note": "", "color": ""},
+        {"label": 2012, "value": 107,"display_value": "$107", "note": "", "color": ""},
+        {"label": 2013, "value": 110,"display_value": "$110", "note": "", "color": ""},
+        {"label": 2014, "value": 112,"display_value": "$112", "note": "", "color": ""}
       ]
     }
   }

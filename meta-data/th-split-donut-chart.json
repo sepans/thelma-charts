@@ -11,10 +11,11 @@
     "chartData":{"friendly":"Data", "type":"table-fixed","rows":2, 
       "fields":{
         "label":{"friendly":"Label", "type":"string", "default": "U.S."},
-        "value":{"friendly":"Value", "type":"int", "default":25}
+        "value":{"friendly":"Value", "type":"int", "default":25},
+        "color":{"friendly":"Color", "type":"colorPicker", "default":"", "optional":true}
 
       },
-      "default":[{"label": "U.S.", "value": 76}, {"label": "China", "value": 43}]
+      "default":[{"label": "U.S.", "value": 76, "color":""}, {"label": "China", "value": 43, "color":""}]
     }
   }
 }
