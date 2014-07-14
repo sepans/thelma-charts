@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "thumbnail":"counter.jpg",
   "inputAttr": {
-    "width":{"friendly":"Width(add px)", "type":"string", "default":"285px"},
+    "width":{"friendly":"Width(add px)", "type":"string", "default":"250px"},
     "content":{"friendly":"Number", "type":"content", "default":"Count to 40"},
     "numberSize":{"friendly":"Number Size", "type":"string", "default":"40px"}, 
     "color":{"friendly":"Number Color", "type":"colorPicker", "default":"", "optional":true}, 
