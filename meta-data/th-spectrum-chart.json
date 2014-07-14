@@ -7,7 +7,7 @@
   "tags":["chart", "column", "animated"],
   "content":false,
   "inputAttr": {
-    "chartWidth":{"friendly":"Width", "type":"int", "default":200},
+    "chartWidth":{"friendly":"Width", "type":"int", "default":275},
     "chartHeight":{"friendly":"Height", "type":"int", "default":300},
     "chartData":{"friendly":"Data", "type":"table-repeating","rows":2, 
       "fields":{
