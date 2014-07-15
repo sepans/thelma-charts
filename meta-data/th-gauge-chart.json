@@ -10,9 +10,9 @@
     "chartData":{"friendly":"Data", "type":"table-fixed","rows":1, 
       "fields":{
         "value":{"friendly":"Value", "type":"int", "default":65},
-        "min":{"friendly":"Value", "type":"int", "default":0},
-        "max":{"friendly":"Value", "type":"int", "default":100},
-        "ticks":{"friendly":"Value", "type":"int", "default":5}
+        "min":{"friendly":"min", "type":"int", "default":0},
+        "max":{"friendly":"max", "type":"int", "default":100},
+        "ticks":{"friendly":"ticks", "type":"int", "default":5}
       },
        "default":[{"value": 65, "min":0, "max":100, "ticks":5}]
     }
