@@ -1,0 +1,12 @@
+{
+  "name": "th-linked-list",
+  "description": "Thelma Linked List",
+  "category":"textual",
+  "version": "0.0.1",
+  "thumbnail":"", 
+  "tags":["textual", "link", "list"],
+  "inputAttr": {
+    "width":{"friendly":"Width(add px)", "type":"string", "default":"300px"},
+    "content":{"friendly":"Header", "type":"content", "default":""}
+  }
+}
