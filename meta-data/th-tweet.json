@@ -3,7 +3,7 @@
   "description": "Thelma Tweet",
   "category":"textual",
   "version": "0.0.1",
-  "thumbnail":"tweet.jpg", 
+  "thumbnail":"twitter.jpg", 
   "tags":["textual", "image"],
   "inputAttr": {
     "width":{"friendly":"Width(add px)", "type":"string", "default":"250px"},
