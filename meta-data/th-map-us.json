@@ -3,7 +3,7 @@
   "description": "Thelma US Map",
   "category":"chart",
   "version": "0.0.1",
-  "thumbnail":"nbar.jpg", 
+  "thumbnail":"map.jpg", 
   "tags":["chart", "bar"],
   "inputAttr": {
     "chartWidth":{"friendly":"Width", "type":"int", "default":300},
