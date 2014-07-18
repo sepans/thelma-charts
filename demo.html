@@ -5,7 +5,7 @@
   <title>thelma-components Demo</title>
 
   <script src="../platform/platform.js"></script>
-  
+
   <link rel="import" href="thelma_all.html">
 
   <style>
@@ -18,7 +18,7 @@
 
 </head>
 <body unresolved>
- 
+
   <p>thelma-components looks like this:</p>
 
   <th-donut-chart animateOnInit="true" style="margin: 20px;"></th-donut-chart>
@@ -50,7 +50,19 @@
   <th-compare-balance-chart animateOnInit="true" chartWidth="300" chartHeight="150"></th-compare-balance-chart>
 
   <th-countdown-reveal animateOnInit="true" startFrom="3" width="270px" height="200px" style="margin: 20px"> 5 million low-income Americans still can't get health insurance under Obamacare.</th-countdown-reveal>
-  
+
+  <th-carousel style="display: block;">
+    <figure>1</figure>
+    <figure>2</figure>
+    <figure>3</figure>
+    <figure>4</figure>
+    <figure>5</figure>
+    <figure>6</figure>
+    <figure>7</figure>
+    <figure>8</figure>
+    <figure>9</figure>
+  </th-carousel>
+
   <!--<th-slider></th-slider>-->
 
   <script>
@@ -66,7 +78,7 @@
                     chart.chartData = {label: 'Platinum', value: 50, display_value: '$50'},{label: 'Gold', value: 45, display_value: '$45'};
                 }
                 else {
-                chart.chartWidth = chart.chartWidth - 50; 
+                chart.chartWidth = chart.chartWidth - 50;
               }
                 i++;
             },1000);
