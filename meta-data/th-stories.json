@@ -6,7 +6,7 @@
   "thumbnail":"stories.jpg",
   "inputAttr": {
     "width":{"friendly":"Width(add px)", "type":"string", "default":"300px"},
-    "theme":{"friendly":"Theme","type":"dropdown","default":"dark", "values":["dark","light"]},
+    "themecolor":{"friendly":"Theme","type":"dropdown","default":"dark", "values":["dark","light"]},
     "links":{"friendly":"Data", "type":"table-repeating","rows":3, 
       "fields":{
         "leadIn":{"friendly":"Lead-in", "type":"string", "default":""},
